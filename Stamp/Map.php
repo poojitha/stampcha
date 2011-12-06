@@ -2,7 +2,7 @@
 
 /*
 .---------------------------------------------------------------------------.
-|  Software: STAMPCHA - The friendly captcha                   |
+|  Software: STAMPCHA - The friendly captcha                                |
 |   Version: 1.0                                                            |
 |   Contact: indrakeerthi@gmail.com                                         |
 |      Info: STAMPCHA-The friendly captcha                                  |
@@ -40,7 +40,9 @@ class Stamp_Map {
 
     private static $imagemap = array(
         "dog.jpg" => "Which image has the picture of dog?",
-        "horse.jpg" => "Which image has the  picture of horse?",
+        "horse.png" => "Which image has the  picture of horse?",
+        "bird.png" => "Which image has the  picture of bird?",
+        "moose.png" => "Which image has the  picture of moose?",
         "cat.jpg" => "Which image has the picture of cat?",
         "bat.jpg" => "Which image has the picture of bat?", 
         "fish.jpg" => "Which image has the picture of fish?",

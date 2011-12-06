@@ -2,7 +2,7 @@
 
 /*
 .---------------------------------------------------------------------------.
-|  Software: STAMPCHA - The friendly captcha                   |
+|  Software: STAMPCHA - The friendly captcha                                |
 |   Version: 1.0                                                            |
 |   Contact: indrakeerthi@gmail.com                                         |
 |      Info: STAMPCHA-The friendly captcha                                  |
@@ -33,6 +33,8 @@
  * @version 1.0
  * @license MIT
  */
+
+include_once 'Map.php';
 
 class Stamp_Stampcha {
 
@@ -70,7 +72,7 @@ class Stamp_Stampcha {
      * @param type $imageSize
      * @return string 
      */
-    public function show($imageSize=array('width' => 100, 'height' => 75)) {
+    public function show($imageSize=array('width' => 75, 'height' => 100)) {
         
         $row = "
         <lable for='stampcha_answer' >$this->selectedQuestion</label> 

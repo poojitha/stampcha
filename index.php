@@ -25,7 +25,7 @@
 */
 
 include_once 'Stamp/Stampcha.php';
-include_once 'Stamp/Map.php';
+
 
 $stampcha = new Stamp_Stampcha();
 $stampcha->init(4); // Number of images to show under the question
@@ -46,7 +46,7 @@ $stampcha->init(4); // Number of images to show under the question
     
     <?php 
     
-    echo $stampcha->show(); // print the question and answers 
+    echo $stampcha->show(); // print the question text box for answers 
     
     
     
