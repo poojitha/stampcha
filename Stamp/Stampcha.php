@@ -1,5 +1,39 @@
 <?php
 
+/*
+.---------------------------------------------------------------------------.
+|  Software: STAMPCHA - The friendly captcha                   |
+|   Version: 1.0                                                            |
+|   Contact: indrakeerthi@gmail.com                                         |
+|      Info: STAMPCHA-The friendly captcha                                  |
+|   Support: https://github.com/indrakeerthi/stampcha/                                       |
+| ------------------------------------------------------------------------- |
+|     Admin: Poojitha Jayasinghe  (project admininistrator)                 |
+|   Authors: Poojitha Jayasinghe                                            |
+|                                                                           |
+|   Founder: Poojitha Jayasinghe (original founder)                         |
+| Copyright (c) 20011-2012, Poojitha Jayasinghe. All Rights Reserved.       |
+|                                                                           |
+| ------------------------------------------------------------------------- |
+|   License: Distributed under the MIT License                              |
+|            http://www.opensource.org/licenses/mit-license.php             |
+| This program is distributed in the hope that it will be useful - WITHOUT  |
+| ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or     |
+| FITNESS FOR A PARTICULAR PURPOSE.                                         |
+| ------------------------------------------------------------------------- |
+
+*/
+
+/**
+ * STAMPCHA - The friendly captcha    
+ * NOTE: Requires PHP version 5 or later
+ * @package Stamp_Stampcha
+ * @author Poojitha Jayasinghe
+ * @copyright 2010 - 2011 Poojitha Jayasinghe
+ * @version 1.0
+ * @license MIT
+ */
+
 class Stamp_Stampcha {
 
     public $imageMapPath = 'Stamp/map/';
