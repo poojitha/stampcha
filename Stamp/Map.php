@@ -42,21 +42,22 @@ class Stamp_Map {
         "dog.jpg" => "Which image has the picture of dog?",
         "horse.png" => "Which image has the  picture of horse?",
         "bird.png" => "Which image has the  picture of bird?",
-        "moose.png" => "Which image has the  picture of moose?",
-        "cat.jpg" => "Which image has the picture of cat?",
-        "bat.jpg" => "Which image has the picture of a thing in the dark?", 
-        "fish.jpg" => "Which image has the picture of fish?",
-        "tiger.jpg" => "Which image has the picture of tiger?",
+        "moose.png" => "Which image has the  picture of a moose?", 
+        "rabbit.jpg" => "Which image has the  picture of a rabbit?", 
+        "cat.png" => "Which image has the picture of a cat?",
+        "bat.jpg" => "I fly in the dark?",
         "black_car.jpg" => "Which image has the picture of a black car?",
-        "scorpion.jpg"=> "Which image has the picture of a scorpion?",
         "elephant.jpg"=> "Which image has the largest animal on land?",
         "dolphin.png"=> "A mammal in water?",
         "girl.png"=> "Where is the femal?",
         "shark.png"=> "Shark! Shark!?",
         "rhino.png"=> "Can you spot a Rhinoceros ?",
-        "monkey.png"=> "I swing from tree to tree ?",
-        "bird_diving.png" => "Which image has the  picture of bird diving?"
-        //"snake.png" => "A poisonous lizard?"
+        "monkey.png"=> "I the monkey swing from tree to tree ?",
+        "bird_diving.png" => "Which image has the  picture of bird diving?",
+        "bycycle.png"=> "Which image has the  picture of bycycle?",
+        "chicken.png"=> "Which image has the  picture of a chicken?",
+        "rat.png"=> "Which image has the  picture of a mouse?",
+        "helicopter.png" => "Which image has helicopter flying in the sky?"
     );
 
     public static function getImageMap() {

@@ -67,7 +67,7 @@ class Stamp_Stampcha {
     }
 
     /**
-     * return the question and answers 
+     * return the question with images
      *
      * @param type $imageSize
      * @return string 
@@ -82,6 +82,7 @@ class Stamp_Stampcha {
         <table class = 'stampcha_table' ><tr>";
         
         foreach ($this->selectedImages as $key=>$image) {
+            $key++;
             $row = $row . "<td><img width='$imageSize[width]' height='$imageSize[height]'  src='" . $this->data_uri($this->imageMapPath . $image, 'image/png') . "' /><br><lable>$key</lable> </td>";
         }
 
@@ -114,7 +115,7 @@ class Stamp_Stampcha {
         $selectedImageKey = array_rand($this->selectedImages, 1);
 
         $this->selectedQuestion = $this->mapImages[$this->selectedImages[$selectedImageKey]];
-        $this->answer = $selectedImageKey+1;
+        $this->answer = $selectedImageKey + 1;
     }
 
     /**
