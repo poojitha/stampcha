@@ -6,7 +6,7 @@
 |   Version: 1.0                                                            |
 |   Contact: indrakeerthi@gmail.com                                         |
 |      Info: STAMPCHA-The friendly captcha                                  |
-|   Support: https://github.com/indrakeerthi/stampcha/                                       |
+|   Support: https://github.com/indrakeerthi/stampcha/                      |
 | ------------------------------------------------------------------------- |
 |     Admin: Poojitha Jayasinghe  (project admininistrator)                 |
 |   Authors: Poojitha Jayasinghe                                            |
@@ -76,11 +76,13 @@ class Stamp_Stampcha {
         
         $row = "
         <lable for='stampcha_answer' >$this->selectedQuestion</label> 
-        <input type='text' class='stampcha_answer' name='stampcha_answer' id='stampcha_answer'/>        
-        <table class = 'stampcha_table'><tr>";
-
-        foreach ($this->selectedImages as $image) {
-            $row = $row . "<td><img width='$imageSize[width]' height='$imageSize[height]'  src='" . $this->data_uri($this->imageMapPath . $image, 'image/png') . "' /></td>";
+        <input type='text' class='stampcha_question' name='stampcha_answer' id='stampcha_answer'/>
+        <br>
+        <lable class='stampcha_message'>Type correct picture number</lable>        
+        <table class = 'stampcha_table' ><tr>";
+        
+        foreach ($this->selectedImages as $key=>$image) {
+            $row = $row . "<td><img width='$imageSize[width]' height='$imageSize[height]'  src='" . $this->data_uri($this->imageMapPath . $image, 'image/png') . "' /><br><lable>$key</lable> </td>";
         }
 
         $row = $row . '</tr></table>';

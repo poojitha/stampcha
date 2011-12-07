@@ -6,7 +6,7 @@
 |   Version: 1.0                                                            |
 |   Contact: indrakeerthi@gmail.com                                         |
 |      Info: STAMPCHA-The friendly captcha                                  |
-|   Support: https://github.com/indrakeerthi/stampcha/                                   |
+|   Support: https://github.com/indrakeerthi/stampcha/                      |
 | ------------------------------------------------------------------------- |
 |     Admin: Poojitha Jayasinghe  (project admininistrator)                 |
 |   Authors: Poojitha Jayasinghe                                            |
@@ -42,6 +42,20 @@ $stampcha->init(4); // Number of images to show under the question
     
 ?>
 
+<style type="text/css">
+    
+  .stampcha_table  td{
+    
+    text-align: center;
+  }
+  
+  .stampcha_message{
+      font-size: 12px;
+  }
+
+</style>
+
+<body style="background-color: yellow">
 <form method="POST">
     
     <?php 
@@ -55,3 +69,5 @@ $stampcha->init(4); // Number of images to show under the question
     <input type="submit" />
     
 </form>
+    
+</body>

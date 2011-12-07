@@ -6,7 +6,7 @@
 |   Version: 1.0                                                            |
 |   Contact: indrakeerthi@gmail.com                                         |
 |      Info: STAMPCHA-The friendly captcha                                  |
-|   Support: https://github.com/indrakeerthi/stampcha/                                |
+|   Support: https://github.com/indrakeerthi/stampcha/                      |
 | ------------------------------------------------------------------------- |
 |     Admin: Poojitha Jayasinghe  (project admininistrator)                 |
 |   Authors: Poojitha Jayasinghe                                            |
@@ -44,13 +44,19 @@ class Stamp_Map {
         "bird.png" => "Which image has the  picture of bird?",
         "moose.png" => "Which image has the  picture of moose?",
         "cat.jpg" => "Which image has the picture of cat?",
-        "bat.jpg" => "Which image has the picture of bat?", 
+        "bat.jpg" => "Which image has the picture of a thing in the dark?", 
         "fish.jpg" => "Which image has the picture of fish?",
         "tiger.jpg" => "Which image has the picture of tiger?",
         "black_car.jpg" => "Which image has the picture of a black car?",
         "scorpion.jpg"=> "Which image has the picture of a scorpion?",
         "elephant.jpg"=> "Which image has the largest animal on land?",
-        "snake.jpg" => "Which image has the picture of snake?"
+        "dolphin.png"=> "A mammal in water?",
+        "girl.png"=> "Where is the femal?",
+        "shark.png"=> "Shark! Shark!?",
+        "rhino.png"=> "Can you spot a Rhinoceros ?",
+        "monkey.png"=> "I swing from tree to tree ?",
+        "bird_diving.png" => "Which image has the  picture of bird diving?"
+        //"snake.png" => "A poisonous lizard?"
     );
 
     public static function getImageMap() {
