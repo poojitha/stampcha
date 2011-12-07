@@ -39,15 +39,15 @@ class Stamp_Map {
     //Write your question and image Id you can be creative as you want to be
 
     private static $imagemap = array(
-        "dog.jpg" => "Which image has the picture of dog?",
+        "dog.png" => "Which image has the picture of dog?",
         "horse.png" => "Which image has the  picture of horse?",
         "bird.png" => "Which image has the  picture of bird?",
         "moose.png" => "Which image has the  picture of a moose?", 
-        "rabbit.jpg" => "Which image has the  picture of a rabbit?", 
+        "rabbit.png" => "Which image has the  picture of a rabbit?", 
         "cat.png" => "Which image has the picture of a cat?",
-        "bat.jpg" => "I fly in the dark?",
-        "black_car.jpg" => "Which image has the picture of a black car?",
-        "elephant.jpg"=> "Which image has the largest animal on land?",
+        "bat.png" => "I fly in the dark?",
+        "black_car.png" => "Which image has the picture of a black car?",
+        "elephant.png"=> "Which image has the largest animal on land?",
         "dolphin.png"=> "A mammal in water?",
         "girl.png"=> "Where is the femal?",
         "shark.png"=> "Shark! Shark!?",
@@ -57,7 +57,8 @@ class Stamp_Map {
         "bycycle.png"=> "Which image has the  picture of bycycle?",
         "chicken.png"=> "Which image has the  picture of a chicken?",
         "rat.png"=> "Which image has the  picture of a mouse?",
-        "helicopter.png" => "Which image has helicopter flying in the sky?"
+        "helicopter.png" => "Which image has helicopter flying in the sky?",
+        "swan.png"=> "Which image has a swan on water?",
     );
 
     public static function getImageMap() {
