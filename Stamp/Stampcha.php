@@ -45,6 +45,7 @@ class Stamp_Stampcha {
     public $selectedQuestion;
     public $answer;
     public $human = false;
+    private $numberOfAttempts =1;
     
     function __construct() {
 
@@ -136,6 +137,7 @@ class Stamp_Stampcha {
         
         session_start();
         
+        
         if($_POST) {
             
             if (crypt($_POST['stampcha_answer'], $_SESSION['answer']) == $_SESSION['answer']) {
@@ -145,7 +147,15 @@ class Stamp_Stampcha {
                         
             }else{
                 
-                $_SESSION['answer'] =  crypt($this->answer); 
+                if(isset($_SESSION['numberOfAttempts'])){
+                    $this->numberOfAttempts = $_SESSION['numberOfAttempts'];
+                    $this->numberOfAttempts = $this->numberOfAttempts+1;
+                }
+                
+                $_SESSION['answer'] =  crypt($this->answer);
+               
+                $_SESSION['numberOfAttempts'] = $this->numberOfAttempts;
+                
                 $this->human = false;
             }
 
@@ -167,6 +177,16 @@ class Stamp_Stampcha {
         
         return $this->human;
         
+    }
+    
+    /**
+     * Return true if the number of tries are greater than the given number
+     * @param type $number
+     * @return type boolean
+     */
+    public function isNumberOfAttemptsGreaterThan($number) {
+        
+        return $this->numberOfAttempts>$number;
     }
 
 }

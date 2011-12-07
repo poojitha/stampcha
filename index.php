@@ -40,6 +40,10 @@ $stampcha->init(4); // Number of images to show under the question
         echo "You are a beautiful human being";
     }
     
+//    if($stampcha->isNumberOfAttemptsGreaterThan(4)){
+//        echo 'You tried more than four';
+//    }
+    
 ?>
 
 <style type="text/css">
