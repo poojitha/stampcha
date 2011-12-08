@@ -3,9 +3,8 @@ STAMPCHA is an alternative solution to user unfriendly CAPTCHA.
 STAMPCHA is a very user friendly and easy to install software for web sites. 
 
 STAMPCHA is designed to show a series of images to user and ask a question based on that.
-only one image is the correct answer.
-
-Users need only to type the relevant image number in the text box.
+only one image is the correct answer.Unlike other CAPTCH software its very easy for the
+users to respond.Users need only to type the relevant image number in the text box.
 
 Since the order of the images and the questions are generated randomly each time user visit the page Its
 practically impossible for robots to break.
@@ -29,6 +28,7 @@ You can use this software anyway you wan't but please remember to give credit fo
 
 
 Thanks for the images
+-------------------------
 
 http://www.designer-daily.com/free-animal-vectors-download-1553
 http://bestdesignoptions.com/?p=1858

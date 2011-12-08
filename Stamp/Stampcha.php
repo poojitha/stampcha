@@ -100,8 +100,11 @@ class Stamp_Stampcha {
     private function selectImagesToShow() {
 
         if ($this->imagesToShow < count($this->mapImages)) {
+            
             $this->selectedImages = array_rand($this->mapImages, $this->imagesToShow);
+            
         } else {
+            
             throw new Exception('Images to show should be less than image count');
         }
 
@@ -114,7 +117,6 @@ class Stamp_Stampcha {
     private function selectImageAndTheQuestion() {
 
         $selectedImageKey = array_rand($this->selectedImages, 1);
-
         $this->selectedQuestion = $this->mapImages[$this->selectedImages[$selectedImageKey]];
         $this->answer = $selectedImageKey + 1;
     }
@@ -127,6 +129,7 @@ class Stamp_Stampcha {
 
         $contents = file_get_contents($file);
         $base64 = base64_encode($contents);
+        
         return ('data:' . $mime . ';base64,' . $base64);
     }
     
@@ -148,14 +151,13 @@ class Stamp_Stampcha {
             }else{
                 
                 if(isset($_SESSION['numberOfAttempts'])){
+                    
                     $this->numberOfAttempts = $_SESSION['numberOfAttempts'];
                     $this->numberOfAttempts = $this->numberOfAttempts+1;
                 }
                 
-                $_SESSION['answer'] =  crypt($this->answer);
-               
-                $_SESSION['numberOfAttempts'] = $this->numberOfAttempts;
-                
+                $_SESSION['answer'] =  crypt($this->answer);               
+                $_SESSION['numberOfAttempts'] = $this->numberOfAttempts;                
                 $this->human = false;
             }
 
@@ -169,8 +171,7 @@ class Stamp_Stampcha {
     }
     
     /**
-     * returns false if the answer is wrong
-     *
+     * returns false if the answer is wrong     *
      * @return type boolean
      */
     public function isHuman(){
@@ -186,7 +187,7 @@ class Stamp_Stampcha {
      */
     public function isNumberOfAttemptsGreaterThan($number) {
         
-        return $this->numberOfAttempts>$number;
+        return $this->numberOfAttempts > $number;
     }
 
 }
